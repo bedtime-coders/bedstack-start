@@ -3,7 +3,7 @@ import { swagger } from "@elysiajs/swagger";
 import env from "@env";
 import { Elysia, t } from "elysia";
 import { description, title } from "../package.json";
-import { users } from "./db/schema";
+import { users } from "./schema";
 
 const app = new Elysia()
 	.use(
