@@ -1,7 +1,7 @@
 {
-	"name": "bedstack-start",
-	"title": "Bedstack Start",
-	"description": "Starter template for Bedstack",
+	"name": "project-name",
+	"title": "Project Title",
+	"description": "A Bedstack application",
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",

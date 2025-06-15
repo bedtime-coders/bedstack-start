@@ -12,9 +12,9 @@ const app = new Elysia()
 		}),
 	)
 	.get("/", ({ redirect }) => redirect("/swagger"))
-	.get("/hello", () => "Hello Elysia")
+	.get("/hello", () => "Hello Bedstack")
 	.listen(3000);
 
 console.log(
-	`🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`,
+	`🦊 Bedstack is running at http://${app.server?.hostname}:${app.server?.port}`,
 );
