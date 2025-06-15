@@ -1,6 +1,8 @@
+import { db } from "@/db";
 import { swagger } from "@elysiajs/swagger";
-import { Elysia } from "elysia";
+import { Elysia, t } from "elysia";
 import { description, title } from "../package.json";
+import { users } from "./db/schema";
 
 const app = new Elysia()
 	.use(
@@ -13,6 +15,18 @@ const app = new Elysia()
 	)
 	.get("/", ({ redirect }) => redirect("/swagger"))
 	.get("/hello", () => "Hello Bedstack")
+	.post(
+		"/users",
+		async ({ body }) => {
+			const user = await db.insert(users).values(body).returning();
+			return user;
+		},
+		{
+			body: t.Object({
+				name: t.String({ minLength: 2, examples: ["John Doe"] }),
+			}),
+		},
+	)
 	.listen(3000);
 
 console.log(

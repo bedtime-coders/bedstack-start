@@ -28,7 +28,13 @@ Including:
    bun install
    ```
 
-2. Start the server
+2. Copy `.env.example` to `.env` and fill in the values
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. Start the server
 
    ```bash
    bun dev
