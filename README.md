@@ -2,9 +2,9 @@
 
 A [Bedstack](https://github.com/bedtime-coders/bedstack) application.
 
-## Getting Started with the Template
+## Getting Started
 
-1. Clone the repository / Click "Use Template"
+1. Clone the repository / Click "Use this template"
 2. Find-and-replace "project-name" with your project name
 3. Find-and-replace "Project Title" with your project title
 4. Remove this section.
