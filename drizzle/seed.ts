@@ -1,7 +1,7 @@
 import { exit } from "node:process";
 import { parseArgs } from "node:util";
 import { db } from "@/db";
-import { users } from "@/db/schema";
+import { users } from "@/schema";
 import { reset, seed } from "drizzle-seed";
 
 const { values } = parseArgs({

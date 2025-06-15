@@ -17,7 +17,7 @@ Including:
 
 - [Bun](https://bun.sh) - Runtime, package manager
 - [ElysiaJS](https://elysiajs.com) - HTTP Framework
-- [Drizzle](https://orm.drizzle.team) - ORM
+- [Drizzle](https://orm.drizzle.team) - ORM, Migrations, Seeding
 - [Biome](https://biomejs.dev) - Linter, Formatter
 
 ## Development
