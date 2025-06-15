@@ -1,15 +1,17 @@
-# Elysia with Bun runtime
+# Bedstack Simple
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+Simple version of [Bedstack](https://github.com/agnyz/bedstack) for rapid prototyping.
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
+## Quickstart
 
-Open http://localhost:3000/ with your browser to see the result.
+1. Install dependencies
+
+    ```bash
+    bun install
+    ```
+
+2. Start the server
+
+    ```bash
+    bun dev
+    ```
