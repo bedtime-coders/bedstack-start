@@ -15,3 +15,7 @@ Simple version of [Bedstack](https://github.com/agnyz/bedstack) for rapid protot
     ```bash
     bun dev
     ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for more information, including how to set up your development environment.
