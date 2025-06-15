@@ -1,12 +1,12 @@
 import { swagger } from "@elysiajs/swagger";
 import { Elysia } from "elysia";
-import { description, title, version } from "../package.json";
+import { description, title } from "../package.json";
 
 const app = new Elysia()
 	.use(
 		swagger({
 			documentation: {
-				info: { title, version, description },
+				info: { title, version: "", description },
 			},
 			exclude: ["/"],
 		}),
