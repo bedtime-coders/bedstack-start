@@ -12,7 +12,13 @@ We use [Bun](https://bun.sh/) as our package manager and runtime. Please make su
 
 1. Clone the repository
 2. Run `bun install` to install the dependencies
-3. Run `bun dev` to start the development server
+3. Create a `.env` file by copying the `.env.example` file and filling in the values
+   ```bash
+   cp .env.example .env
+   ```
+4. Run `bun db:push` to [push the database schema to the database](https://orm.drizzle.team/docs/drizzle-kit-push)
+5. (Optional) Run `bun db:seed` to seed the database
+6. Run `bun dev` to start the development server
 
 ### Linting and Formatting
 
