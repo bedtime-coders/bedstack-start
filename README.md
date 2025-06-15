@@ -1,4 +1,4 @@
-# PROJECT NAME
+# Project Title
 
 A [Bedstack](https://github.com/bedtime-coders/bedstack) application.
 
