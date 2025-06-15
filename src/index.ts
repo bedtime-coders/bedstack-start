@@ -1,5 +1,5 @@
-import { Elysia } from "elysia";
 import { swagger } from "@elysiajs/swagger";
+import { Elysia } from "elysia";
 import { description, title, version } from "../package.json";
 
 const app = new Elysia()
