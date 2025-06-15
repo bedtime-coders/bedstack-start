@@ -1,20 +1,27 @@
-# Bedstack Simple
+# Bedstack Start
 
-Simple version of [Bedstack](https://github.com/agnyz/bedstack) for rapid prototyping.
+Starter template for [Bedstack](https://github.com/bedtime-coders/bedstack).
+
+## What's included
+
+- [Bun](https://bun.sh) - Runtime, package manager
+- [ElysiaJS](https://elysiajs.com) - HTTP Framework
+- [Drizzle](https://orm.drizzle.team) - ORM
+- [Biome](https://biomejs.dev) - Linter, Formatter
 
 ## Quickstart
 
 1. Install dependencies
 
-    ```bash
-    bun install
-    ```
+   ```bash
+   bun install
+   ```
 
 2. Start the server
 
-    ```bash
-    bun dev
-    ```
+   ```bash
+   bun dev
+   ```
 
 ## Contributing
 
