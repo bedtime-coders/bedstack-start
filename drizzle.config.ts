@@ -3,7 +3,7 @@ import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
 	out: "./drizzle",
-	schema: "./src/db.ts", // Move to separate files once the project scales
+	schema: "./src/schema.ts",
 	dialect: "sqlite",
 	dbCredentials: {
 		url: env.DATABASE_URL,
