@@ -1,9 +1,9 @@
 import { exit } from "node:process";
 import { parseArgs } from "node:util";
 import { db } from "@/db";
+import { env } from "@/env";
 import { users } from "@/schema";
 import { reset, seed } from "drizzle-seed";
-import { env } from "@/plugins/env";
 
 const { values } = parseArgs({
 	args: Bun.argv,
