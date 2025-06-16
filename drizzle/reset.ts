@@ -1,9 +1,7 @@
 import { db } from "@/db";
 import { users } from "@/schema";
-import { reset } from "drizzle-seed";
+import chalk from "chalk";
 
-console.log("🔄 Resetting database...");
-await reset(db, {
-	users,
-});
-console.log("✅ Database reset successfully.");
+console.log(chalk.gray("Resetting database"));
+await db.delete(users);
+console.log(`[${chalk.green("✓")}] Database reset complete`);

@@ -1,9 +1,13 @@
 import { exit } from "node:process";
 import { parseArgs } from "node:util";
-import { db } from "@/db";
 import { env } from "@/env";
 import { users } from "@/schema";
+import chalk from "chalk";
+import { drizzle } from "drizzle-orm/bun-sqlite";
 import { reset, seed } from "drizzle-seed";
+
+// See: https://github.com/drizzle-team/drizzle-orm/issues/3599
+const db = drizzle(env.DATABASE_URL);
 
 const { values } = parseArgs({
 	args: Bun.argv,
@@ -21,17 +25,17 @@ if (values.reset) {
 		);
 		exit(1);
 	}
-	console.log("🔄 Resetting database...");
+	console.log(chalk.gray("Resetting database"));
 	await reset(db, {
 		users,
 	});
-	console.log("✅ Database reset successfully.");
+	console.log(`[${chalk.green("✓")}] Database reset complete`);
 }
 
-console.log("🌱 Seeding database...");
+console.log(chalk.gray("Seeding database"));
 await seed(db, {
 	users,
 });
-console.log("✅ Database seeded successfully.");
+console.log(`[${chalk.green("✓")}] Database seeded`);
 
 exit(0);
