@@ -6,7 +6,9 @@ import { Elysia, t } from "elysia";
 import { description, title } from "../package.json";
 import { users } from "./schema";
 
-const app = new Elysia()
+console.log(chalk.gray("Starting Bedstack"));
+
+new Elysia()
 	.use(envPlugin)
 	.use(
 		swagger({
@@ -30,8 +32,8 @@ const app = new Elysia()
 			}),
 		},
 	)
-	.listen(env.PORT);
-
-console.log(
-	`Bedstack is up and running on ${chalk.blue(`http://${app.server?.hostname}:${app.server?.port}`)}`,
-);
+	.listen(env.PORT, ({ hostname, port }) => {
+		console.log(
+			`Bedstack is up and running on ${chalk.blue(`http://${hostname}:${port}`)}`,
+		);
+	});
