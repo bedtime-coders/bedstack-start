@@ -9,6 +9,10 @@
 		"build": "bun build src/index.ts --outdir dist --target=bun --sourcemap",
 		"preview": "bun run dist/index.js",
 		"fix": "biome check --write",
+		"check": "biome check",
+		"check:errors": "biome check --diagnostic-level=error",
+		"typecheck": "tsc --noEmit",
+		"clean": "rimraf node_modules",
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate",
 		"db:studio": "drizzle-kit studio",
@@ -28,6 +32,7 @@
 		"chalk": "^5.4.1",
 		"drizzle-kit": "^0.31.1",
 		"drizzle-seed": "^0.3.1",
+		"rimraf": "^6.0.1",
 		"typescript": "^5.8.3"
 	},
 	"module": "src/index.js",
