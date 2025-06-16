@@ -1,12 +1,13 @@
 import { db } from "@/db";
+import { env, envPlugin } from "@/plugins/env";
 import { swagger } from "@elysiajs/swagger";
-import env from "@env";
 import chalk from "chalk";
 import { Elysia, t } from "elysia";
 import { description, title } from "../package.json";
 import { users } from "./schema";
 
 const app = new Elysia()
+	.use(envPlugin)
 	.use(
 		swagger({
 			documentation: {
@@ -16,7 +17,7 @@ const app = new Elysia()
 		}),
 	)
 	.get("/", ({ redirect }) => redirect("/swagger"))
-	.get("/hello", () => "Hello Bedstack")
+	.get("/hello", ({ env }) => `Hello Bedstack on port ${env.PORT}`)
 	.post(
 		"/users",
 		async ({ body }) => {

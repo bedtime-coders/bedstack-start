@@ -3,6 +3,7 @@ import { parseArgs } from "node:util";
 import { db } from "@/db";
 import { users } from "@/schema";
 import { reset, seed } from "drizzle-seed";
+import { env } from "@/plugins/env";
 
 const { values } = parseArgs({
 	args: Bun.argv,
@@ -14,15 +15,12 @@ const { values } = parseArgs({
 });
 
 if (values.reset) {
-	const nodeEnv = process.env.NODE_ENV;
-	if (!nodeEnv || !["development", "test"].includes(nodeEnv)) {
+	if (env.NODE_ENV === "production") {
 		console.error(
 			"❌ Database reset is only allowed in development or test environments.",
 		);
-		console.error("Current NODE_ENV:", nodeEnv || "not set");
 		exit(1);
 	}
-
 	console.log("🔄 Resetting database...");
 	await reset(db, {
 		users,

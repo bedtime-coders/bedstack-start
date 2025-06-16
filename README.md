@@ -16,10 +16,9 @@ Bedstack is a collection of bleeding-edge technologies to build modern web appli
 Including:
 
 - [Bun](https://bun.sh) - Runtime, package manager
-- [ElysiaJS](https://elysiajs.com) - HTTP Framework
+- [ElysiaJS](https://elysiajs.com) - Web Framework, Environment Variables
 - [Drizzle](https://orm.drizzle.team) - ORM, Migrations, Seeding
 - [Biome](https://biomejs.dev) - Linter, Formatter
-- [ark.env](https://yam.codes/ark.env) - Typesafe Environment Variables
 
 ## Development
 
