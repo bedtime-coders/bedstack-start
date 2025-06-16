@@ -1,6 +1,7 @@
 import { db } from "@/db";
 import { swagger } from "@elysiajs/swagger";
 import env from "@env";
+import chalk from "chalk";
 import { Elysia, t } from "elysia";
 import { description, title } from "../package.json";
 import { users } from "./schema";
@@ -31,5 +32,5 @@ const app = new Elysia()
 	.listen(env.PORT);
 
 console.log(
-	`🦊 Bedstack is running at http://${app.server?.hostname}:${app.server?.port}`,
+	`Bedstack is up and running on ${chalk.blue(`http://${app.server?.hostname}:${app.server?.port}`)}`,
 );
