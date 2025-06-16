@@ -6,6 +6,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "bun run --watch src/index.ts",
+		"build": "bun build src/index.ts --outdir dist --target=bun",
+		"preview": "bun run dist/index.js",
 		"fix": "biome check --write",
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate",
