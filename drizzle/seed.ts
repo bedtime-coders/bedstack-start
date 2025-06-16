@@ -25,10 +25,13 @@ if (values.reset) {
 	await reset(db, {
 		users,
 	});
+	console.log("✅ Database reset successfully.");
 }
 
+console.log("🌱 Seeding database...");
 await seed(db, {
 	users,
 });
+console.log("✅ Database seeded successfully.");
 
 exit(0);
