@@ -11,7 +11,7 @@
   <!-- 1. uncomment the commented <a /> tag below -->
   <!-- 2. remove the duplicated LICENSE badge, only keeping yours -->
   <!-- 3. delete these instructions -->
-  <a href="https://github.com/bedtime-coders/bedstack-start/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/bedtime-coders/bedstack-start?label=License&color=blue&logo=law" alt="license" /></a>
+  <a href="https://github.com/bedtime-coders/bedstack-start/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/bedtime-coders/bedstack-stripped?label=License&color=blue&logo=law&labelColor=0d1117" alt="license" /></a>
   <!--     <a href="https://github.com/repo-author/repo-name/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/repo-author/repo-name?label=License&color=blue&logo=law" alt="license" /></a> -->
   <br/><img src="./assets/logo-mini.png" alt="bun" width="200"/>
   <p>A <a href="https://github.com/bedtime-coders/bedstack">Bedstack</a> application</p>
@@ -28,16 +28,15 @@
 7. Edit `LICENSE` and add name + year
 8. Remove this section
 
-## Bedstack
+## Bedstack: Bun + ElysiaJS + Drizzle Stack
 
-Bedstack is a collection of bleeding-edge technologies to build modern web applications.
+**Bedstack** is a collection of bleeding-edge technologies to build modern web applications.
 
 Including:
 
-- [Bun](https://bun.sh) - Runtime, package manager
-- [ElysiaJS](https://elysiajs.com) - Web Framework, Environment Variables
-- [Drizzle](https://orm.drizzle.team) - ORM, Migrations, Seeding
-- [Biome](https://biomejs.dev) - Linter, Formatter
+- **B**: [Bun](https://bun.sh) - Runtime + package manager, [Biome](https://biomejs.dev) - Code quality
+- **E**: [ElysiaJS](https://elysiajs.com) - HTTP Framework
+- **D**: [Drizzle](https://orm.drizzle.team) - ORM
 
 ## Development
 
@@ -63,6 +62,11 @@ Including:
 
    ```bash
    bun dev
+   ```
+
+5. (Optional) Start the [database studio](https://orm.drizzle.team/drizzle-studio/overview)
+   ```bash
+   bun db:studio
    ```
 
 ## Contributing
