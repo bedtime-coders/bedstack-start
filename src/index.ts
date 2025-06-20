@@ -1,8 +1,8 @@
-import { db } from "@/db";
-import { env, envPlugin } from "@/env";
 import { swagger } from "@elysiajs/swagger";
 import chalk from "chalk";
 import { Elysia, t } from "elysia";
+import { db } from "@/db";
+import { env, envPlugin } from "@/env";
 import { description, title } from "../package.json";
 import { users } from "./schema";
 

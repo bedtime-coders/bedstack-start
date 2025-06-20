@@ -1,10 +1,10 @@
 import { exit } from "node:process";
 import { parseArgs } from "node:util";
-import { env } from "@/env";
-import { users } from "@/schema";
 import chalk from "chalk";
 import { drizzle } from "drizzle-orm/bun-sqlite";
 import { reset, seed } from "drizzle-seed";
+import { env } from "@/env";
+import { users } from "@/schema";
 
 // See: https://github.com/drizzle-team/drizzle-orm/issues/3599
 const db = drizzle(env.DATABASE_URL);
