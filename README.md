@@ -6,8 +6,13 @@
     <a href="https://elysiajs.com/"><img src="https://custom-icon-badges.demolab.com/badge/ElysiaJS-0f172b.svg?logo=elysia" alt="elysia" /></a>
     <a href="https://drizzle.team/"><img src="https://img.shields.io/badge/Drizzle-C5F74F?logo=drizzle&logoColor=000" alt="drizzle" /></a>
     <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/Biome-24272f?logo=biome&logoColor=f6f6f9" alt="biome" /></a>
-    <a href="https://scalar.com/"><img src="https://img.shields.io/badge/Scalar-080808?logo=scalar&logoColor=e7e7e7" alt="scalar" /></a>
-    <a href="https://github.com/repo-author/repo-name/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/repo-author/repo-name?label=License&color=blue&logo=law" alt="license" /></a>
+    <a href="https://scalar.com/"><img src="https://img.shields.io/badge/Scalar-080808?logo=scalar&logoColor=e7e7e7" alt="scalar" /></a
+    <!-- Badges instructions: -->     
+    <!-- 1. uncomment the commented <a /> tag below -->
+    <!-- 2. remove the duplicated LICENSE badge, only keeping yours -->
+    <!-- 3. delete these instructions -->
+    <a href="https://github.com/bedtime-coders/bedstack-start/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/bedtime-coders/bedstack-start?label=License&color=blue&logo=law" alt="license" /></a>
+    <!--     <a href="https://github.com/repo-author/repo-name/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/repo-author/repo-name?label=License&color=blue&logo=law" alt="license" /></a> -->
     <p>A <a href="https://github.com/bedtime-coders/bedstack">Bedstack</a> application</p>
 </div>
 
@@ -18,8 +23,9 @@
 3. Find-and-replace "repo-name" with the repository name 
 4. Find-and-replace "project-name" with your project name
 5. Find-and-replace "Project Title" with your project title
-6. Edit `LICENSE` and add name + year
-6. Remove this section
+6. Follow `<!-- Badges instructions: -->` above (see raw code)
+7. Edit `LICENSE` and add name + year
+8. Remove this section
 
 ## Bedstack
 
