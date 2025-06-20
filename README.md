@@ -1,13 +1,21 @@
-# Project Title
-
-A [Bedstack](https://github.com/bedtime-coders/bedstack) application.
+<div align="center">
+    <h1>
+        Project Title
+    </h1>
+    <a href="https://bun.sh/"><img src="https://img.shields.io/badge/Bun-14151a?logo=bun&logoColor=fbf0df" alt="bun" /></a>
+    <a href="https://elysiajs.com/"><img src="https://custom-icon-badges.demolab.com/badge/ElysiaJS-0f172b.svg?logo=elysia" alt="elysia" /></a>
+    <a href="https://drizzle.team/"><img src="https://img.shields.io/badge/Drizzle-C5F74F?logo=drizzle&logoColor=000" alt="drizzle" /></a>
+    <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/Biome-24272f?logo=biome&logoColor=f6f6f9" alt="biome" /></a>
+    <a href="https://scalar.com/"><img src="https://img.shields.io/badge/Scalar-080808?logo=scalar&logoColor=e7e7e7" alt="scalar" /></a>
+    <p>A <a href="https://github.com/bedtime-coders/bedstack">Bedstack</a> application</p>
+</div>
 
 ## Getting Started
 
 1. Clone the repository / Click "Use this template"
 2. Find-and-replace "project-name" with your project name
 3. Find-and-replace "Project Title" with your project title
-4. Remove this section.
+4. Remove this section
 
 ## Bedstack
 
