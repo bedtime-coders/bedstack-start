@@ -13,7 +13,7 @@
   <!-- 3. delete these instructions -->
   <a href="https://github.com/bedtime-coders/bedstack-start/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/bedtime-coders/bedstack-stripped?label=License&color=blue&logo=law&labelColor=0d1117" alt="license" /></a>
   <!--     <a href="https://github.com/repo-author/repo-name/blob/main/LICENSE"><img src="https://custom-icon-badges.demolab.com/github/license/repo-author/repo-name?label=License&color=blue&logo=law" alt="license" /></a> -->
-  <br/><img src="./assets/logo-mini.png" alt="bun" width="200"/>
+  <br/><img src="./public/logo-mini.png" alt="bun" width="200"/>
   <p>A <a href="https://github.com/bedtime-coders/bedstack">Bedstack</a> application</p>
 </div>
 
