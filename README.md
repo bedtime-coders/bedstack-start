@@ -69,6 +69,12 @@ Including:
    bun db:studio
    ```
 
+## Testing
+
+```bash
+bun run test # Not `bun test`!
+```
+
 ## Building for production
 
 > [!TIP]
